@@ -1,0 +1,152 @@
+ccc add nozombiesDT -1260 -1220 -728 -768 -1 hostilefree
+ccc add donorsonlytraders -1260 -1220 -728 -768 -1
+wpc add trader -1240 36 -748
+wpc add traders -1240 36 -748
+ccc add NoBuildingCloseToTraders1 1859 2319 3367 2907 -1 lcbfree
+ccc add bmonly(22-4)_NoStayingAtTraders1 2059 2119 3167 3107 -1
+ccc add NoBuildingCloseToTraders2 1040 1500 1759 1299 -1 lcbfree
+ccc add bmonly(22-4)_NoStayingAtTraders2 1240 1300 1559 1499 -1
+ccc add NoBuildingCloseToTraders3 509 969 3217 2757 -1 lcbfree
+ccc add bmonly(22-4)_NoStayingAtTraders3 709 769 3017 2957 -1
+ccc add NoBuildingCloseToTraders4 -691 -231 967 507 -1 lcbfree
+ccc add bmonly(22-4)_NoStayingAtTraders4 -491 -431 767 707 -1
+ccc add NoBuildingCloseToTraders5 509 969 -383 -843 -1 lcbfree
+ccc add bmonly(22-4)_NoStayingAtTraders5 709 769 -583 -643 -1
+ccc add NoBuildingCloseToTraders6 -3501 -3041 300 -160 -1 lcbfree
+ccc add bmonly(22-4)_NoStayingAtTraders6 -3301 -3241 100 40 -1
+ccc add NoBuildingCloseToTraders7 -2191 -1731 1267 807 -1 lcbfree
+ccc add bmonly(22-4)_NoStayingAtTraders7 -1991 -1931 1067 1007 -1
+ccc add NoBuildingCloseToTraders8 -2792 -2332 -491 -951 -1 lcbfree
+ccc add bmonly(22-4)_NoStayingAtTraders8 -2592 -2532 -691 -751 -1
+ccc add NoBuildingCloseToTraders9 -1401 -941 -1882 -2342 -1 lcbfree
+ccc add bmonly(22-4)_NoStayingAtTraders9 -1201 -1141 -2082 -2142 -1
+ccc add NoBuildingCloseToTraders10 399 859 -2482 -2942 -1 lcbfree
+ccc add bmonly(22-4)_NoStayingAtTraders10 599 659 -2682 -2742 -1
+ccc add NoBuildingCloseToTraders11 -1701 -1241 3450 2990 -1 lcbfree
+ccc add bmonly(22-4)_NoStayingAtTraders11 -1501 -1441 3250 3190 -1
+ccc add NoBuildingCloseToTraders12 2650 3110 149 -311 -1 lcbfree
+ccc add bmonly(22-4)_NoStayingAtTraders12 2850 2910 -51 -111 -1
+ccc add NoBuildingCloseToTraders13 -2191 -1731 -2927 -3387 -1 lcbfree
+ccc add bmonly(22-4)_NoStayingAtTraders13 -1991 -1931 -3127 -3187 -1
+ccc add NoBuildingCloseToTraders14 -3200 -2740 -2101 -2561 -1 lcbfree
+ccc add bmonly(22-4)_NoStayingAtTraders14 -3000 -2940 -2301 -2361 -1
+ccc add NoBuildingCloseToTraders15 -1400 -940 -751 -1211 -1 lcbfree
+ccc add bmonly(22-4)_NoStayingAtTraders15 -1200 -1140 -951 -1011 -1
+ccc add NoBuildingCloseToTraders16 -2860 -2400 -1541 -2001 -1 lcbfree
+ccc add bmonly(22-4)_NoStayingAtTraders16 -2660 -2600 -1741 -1801 -1
+ccc add NoBuildingCloseToTraders17 1863 2323 1199 739 -1 lcbfree
+ccc add bmonly(22-4)_NoStayingAtTraders17 2063 2123 999 939 -1
+ccc add NoBuildingCloseToTraders18 2199 2659 -1500 -1960 -1 lcbfree
+ccc add bmonly(22-4)_NoStayingAtTraders18 2399 2459 -1700 -1760 -1
+ccc add NoBuildingCloseToTraders19 2516 2976 -2631 -3091 -1 lcbfree
+ccc add bmonly(22-4)_NoStayingAtTraders19 2716 2776 -2831 -2891 -1
+ccc add nozombiesA -1328 -1164 -564 -728 -1 hostilefree
+ccc add DCA -1458 -1034 -434 -858 -1 lcbfree
+ccc add DC2A -1328 -1164 -564 -728 -1 landclaim
+wpc add A1 -1290 36 -619
+ccc add A1 -1307 -1273 -585 -619 -1 landclaim
+wpc add A2 -1246 36 -619
+ccc add A2 -1263 -1229 -585 -619 -1 landclaim
+wpc add A3 -1202 36 -619
+ccc add A3 -1219 -1185 -585 -619 -1 landclaim
+wpc add A4 -1290 36 -663
+ccc add A4 -1307 -1273 -629 -663 -1 landclaim
+wpc add A5 -1246 36 -663
+ccc add A5 -1263 -1229 -629 -663 -1 landclaim
+wpc add A6 -1202 36 -663
+ccc add A6 -1219 -1185 -629 -663 -1 landclaim
+wpc add A7 -1290 36 -707
+ccc add A7 -1307 -1273 -673 -707 -1 landclaim
+wpc add A8 -1246 36 -707
+ccc add A8 -1263 -1229 -673 -707 -1 landclaim
+wpc add A9 -1202 36 -707
+ccc add A9 -1219 -1185 -673 -707 -1 landclaim
+wpc add cityA -1245 37 -624
+ccc add nozombiesB -2528 -2364 1686 1522 -1 hostilefree
+ccc add DCB -2658 -2234 1816 1392 -1 lcbfree
+ccc add DC2B -2528 -2364 1686 1522 -1 landclaim
+wpc add B1 -2490 45 1631
+ccc add B1 -2507 -2473 1665 1631 -1 landclaim
+wpc add B2 -2446 45 1631
+ccc add B2 -2463 -2429 1665 1631 -1 landclaim
+wpc add B3 -2402 45 1631
+ccc add B3 -2419 -2385 1665 1631 -1 landclaim
+wpc add B4 -2490 45 1587
+ccc add B4 -2507 -2473 1621 1587 -1 landclaim
+wpc add B5 -2446 45 1587
+ccc add B5 -2463 -2429 1621 1587 -1 landclaim
+wpc add B6 -2402 45 1587
+ccc add B6 -2419 -2385 1621 1587 -1 landclaim
+wpc add B7 -2490 45 1543
+ccc add B7 -2507 -2473 1577 1543 -1 landclaim
+wpc add B8 -2446 45 1543
+ccc add B8 -2463 -2429 1577 1543 -1 landclaim
+wpc add B9 -2402 45 1543
+ccc add B9 -2419 -2385 1577 1543 -1 landclaim
+wpc add cityB -2445 46 1626
+ccc add nozombiesC -1478 -1314 -3114 -3278 -1 hostilefree
+ccc add DCC -1608 -1184 -2984 -3408 -1 lcbfree
+ccc add DC2C -1478 -1314 -3114 -3278 -1 landclaim
+wpc add C1 -1440 36 -3169
+ccc add C1 -1457 -1423 -3135 -3169 -1 landclaim
+wpc add C2 -1396 36 -3169
+ccc add C2 -1413 -1379 -3135 -3169 -1 landclaim
+wpc add C3 -1352 36 -3169
+ccc add C3 -1369 -1335 -3135 -3169 -1 landclaim
+wpc add C4 -1440 36 -3213
+ccc add C4 -1457 -1423 -3179 -3213 -1 landclaim
+wpc add C5 -1396 36 -3213
+ccc add C5 -1413 -1379 -3179 -3213 -1 landclaim
+wpc add C6 -1352 36 -3213
+ccc add C6 -1369 -1335 -3179 -3213 -1 landclaim
+wpc add C7 -1440 36 -3257
+ccc add C7 -1457 -1423 -3223 -3257 -1 landclaim
+wpc add C8 -1396 36 -3257
+ccc add C8 -1413 -1379 -3223 -3257 -1 landclaim
+wpc add C9 -1352 36 -3257
+ccc add C9 -1369 -1335 -3223 -3257 -1 landclaim
+wpc add cityC -1395 37 -3174
+ccc add nozombiesD 3022 3186 -564 -728 -1 hostilefree
+ccc add DCD 2892 3316 -434 -858 -1 lcbfree
+ccc add DC2D 3022 3186 -564 -728 -1 landclaim
+wpc add D1 3060 50 -619
+ccc add D1 3043 3077 -585 -619 -1 landclaim
+wpc add D2 3104 50 -619
+ccc add D2 3087 3121 -585 -619 -1 landclaim
+wpc add D3 3148 50 -619
+ccc add D3 3131 3165 -585 -619 -1 landclaim
+wpc add D4 3060 50 -663
+ccc add D4 3043 3077 -629 -663 -1 landclaim
+wpc add D5 3104 50 -663
+ccc add D5 3087 3121 -629 -663 -1 landclaim
+wpc add D6 3148 50 -663
+ccc add D6 3131 3165 -629 -663 -1 landclaim
+wpc add D7 3060 50 -707
+ccc add D7 3043 3077 -673 -707 -1 landclaim
+wpc add D8 3104 50 -707
+ccc add D8 3087 3121 -673 -707 -1 landclaim
+wpc add D9 3148 50 -707
+ccc add D9 3131 3165 -673 -707 -1 landclaim
+wpc add cityD 3105 51 -624
+ccc add nozombiesE -3278 -3114 3036 2872 -1 hostilefree
+ccc add DCE -3408 -2984 3166 2742 -1 lcbfree
+ccc add DC2E -3278 -3114 3036 2872 -1 landclaim
+wpc add E1 -3240 47 2981
+ccc add E1 -3257 -3223 3015 2981 -1 landclaim
+wpc add E2 -3196 47 2981
+ccc add E2 -3213 -3179 3015 2981 -1 landclaim
+wpc add E3 -3152 47 2981
+ccc add E3 -3169 -3135 3015 2981 -1 landclaim
+wpc add E4 -3240 47 2937
+ccc add E4 -3257 -3223 2971 2937 -1 landclaim
+wpc add E5 -3196 47 2937
+ccc add E5 -3213 -3179 2971 2937 -1 landclaim
+wpc add E6 -3152 47 2937
+ccc add E6 -3169 -3135 2971 2937 -1 landclaim
+wpc add E7 -3240 47 2893
+ccc add E7 -3257 -3223 2927 2893 -1 landclaim
+wpc add E8 -3196 47 2893
+ccc add E8 -3213 -3179 2927 2893 -1 landclaim
+wpc add E9 -3152 47 2893
+ccc add E9 -3169 -3135 2927 2893 -1 landclaim
+wpc add cityE -3195 48 2976
