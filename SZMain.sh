@@ -22,7 +22,7 @@ echo "                                        "
 #wget -O PVP_News2 https://raw.githubusercontent.com/200779b/links/refs/heads/main/PVP_News
 
 
-if [ ${_DOWNLOAD} = 1 ]; then
+if [ ${_ADMIN} = 1 ]; then
 
 echo "wait"
 sleep 5
