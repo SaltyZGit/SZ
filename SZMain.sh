@@ -31,6 +31,8 @@ sleep infinity
 fi
 _LIVEMAPPORT=$((SERVER_PORT + 7))  # Calculate the expected WebUI_Port value
 
+if [ -f "./Saves/CpmSettings.xml" ]; then
+
 # Extract the current <WebUI_Port> value from the XML file
 _CURRENTPORT=$(grep -oP '(?<=<WebUI_Port>)[0-9]+(?=</WebUI_Port>)' ./Saves/CpmSettings.xml)
 
@@ -72,7 +74,10 @@ else
     esac
 fi
 
+else
+    echo -e "⛔  CPM not installed yet. Manually set live map port to \e[38;5;111m$_LIVEMAPPORT\e[0m or restart the server to adjust in here. ⛔"
 
+fi
 
 export TZ=tc/GMT+6
 echo "Current date: "`date +%Y-%m-%d\(%Hh%M-CST\)`
