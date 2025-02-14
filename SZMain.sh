@@ -75,7 +75,7 @@ else
 fi
 
 else
-    echo -e "⛔  CPM not installed yet. Manually set live map port to \e[38;5;111m$_LIVEMAPPORT\e[0m or restart the server to adjust in here. ⛔"
+    echo -e "⛔  CPM first install detected. Manually set live map port to \e[38;5;111m$_LIVEMAPPORT\e[0m after startup or restart the server to adjust in here. ⛔"
 
 fi
 
