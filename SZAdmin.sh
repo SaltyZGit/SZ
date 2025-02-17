@@ -402,9 +402,9 @@ echo "Enter the URL to download from or exit to return to the main menu: "
 tput cuu1 && tput hpa 31
 read -p "" _URL
 
-_URL=${_URL,,}  # Convert to lowercase
+_URL_lc=${_URL,,}  # Convert to lowercase
 
-if [[ $_URL == "exit" ]]; then
+if [[ $_URL_lc == "exit" ]]; then
 		echo "Exiting..."
 	sleep 2
 	exec "$0"  # 🚀 Restart the script
