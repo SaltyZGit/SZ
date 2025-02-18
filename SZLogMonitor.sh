@@ -149,7 +149,12 @@ if [ -f "./SZ/commands.txt" ]; then
     fi
 fi
 
-# tail should stop here while server still runs...    
 fi #1
+
+if echo "$line" | grep -q " INF Executing command 'shutdown' by Telnet from 127.0.0.1"; then
+sleep 3
+echo "Received shutdown command from panel... Exiting."
+        kill -TERM 1
+fi 
 
 done
