@@ -221,37 +221,6 @@ echo -e "Checking on telnet connection"
 sleep 1
 done 
 
-cleanup() {
-    echo "🛑 Desligando servidor corretamente..."
-
-    # Finalizar Telnet
-    TELNET_PID=$(pgrep -f "telnet -E 127.0.0.1 ${TELNET_PORT}")
-    if [ ! -z "$TELNET_PID" ]; then
-        echo "🛑 Finalizando Telnet (PID: $TELNET_PID)..."
-        kill -SIGTERM "$TELNET_PID"
-    fi
-
-    # Finalizar Log Monitor (`tail -f`)
-    TAIL_PID=$(pgrep -f "tail -n 0 -f")
-    if [ ! -z "$TAIL_PID" ]; then
-        echo "🛑 Finalizando Monitor de Logs (PID: $TAIL_PID)..."
-        kill -SIGTERM "$TAIL_PID"
-    fi
-
-    # Finalizar Servidor do Jogo
-    SERVER_PID=$(pgrep -f "7DaysToDieServer.x86_64")
-    if [ ! -z "$SERVER_PID" ]; then
-        echo "🛑 Finalizando Servidor (PID: $SERVER_PID)..."
-        kill -SIGTERM "$SERVER_PID"
-    fi
-
-    # Garantir que o script termine corretamente
-    exit 0
-}
-
-# Capturar Sinal de Encerramento do Pterodactyl
-trap cleanup EXIT
-
 script -qc "telnet -E 127.0.0.1 ${TELNET_PORT}" /dev/null < /dev/tty &
 
 bash ./SZ/SZLogMonitor.sh &
