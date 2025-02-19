@@ -19,6 +19,25 @@ echo -e "                           \e[36mby Namsaknoi${emoji}"
 echo "    "
 
 }
+handle_input() {
+    read -p "-> " input
+    if [[ "$input" == "shutdown" ]]; then
+        echo "Received shutdown command from panel... Exiting."
+        kill -TERM 1
+    fi
+    echo "$input"
+}
+
+handle_any() {
+    read -p "-> " input
+    if [[ "$input" == "shutdown" ]]; then
+        echo "Received shutdown command from panel... Exiting."
+        kill -TERM 1
+    else
+    echo "$input xxx"
+    exec "$0"  # 🚀 Restart the script    
+    fi
+}
 
 # Example usage
 logo "😀"
@@ -43,7 +62,8 @@ while true; do
     
     # Capture user input
     echo "Enter your choice (1-7): "
-    read -p "-> " choice
+#    read -p "-> " choice
+    choice=$(handle_input)
 
     case $choice in
     "S")
@@ -101,8 +121,10 @@ echo -e "\e[33mhttp://szgamepanel.com/server/${P_SERVER_UUID:0:8}/files/edit#/Da
 fi
 
 echo "Enter any char to return..."
-read -n 1 -s -r -p "->"
-read -t 0.1 -n 100 
+    handle_any
+#read -n 1 -s -r -p "->"
+#read -t 0.1 -n 100 
+
 sleep 1
 exec "$0"  # 🚀 Restart the script
             ;;
@@ -147,10 +169,11 @@ fi
     #fi
 
 if [[ $abort == true ]]; then
-	echo -e "  "
+echo -e "  "
 	echo "Enter any char to return..."
-	read -n 1 -s -r -p "->"
-	read -t 0.1 -n 100 
+    handle_any
+#	read -n 1 -s -r -p "->"
+#	read -t 0.1 -n 100 
 	sleep 1
 	exec "$0"  # 🚀 Restart the script
 fi
@@ -166,7 +189,8 @@ echo "${_WORLD}" >> "$command_file"
 # Ask for the name of the donor trader POI
 echo "Enter the name of the donor trader POI: "
 tput cuu1 && tput hpa 40
-read -p "" donor_poi_name
+#read -p "" donor_poi_name
+    donor_poi_name=$(handle_input)
 
 # Extract donor POI position
 poi_position=$(grep -o 'name="'"$donor_poi_name"'" position="[^"]*"' ./Data/Worlds/${_WORLD}/prefabs.xml | cut -d'"' -f4)
@@ -318,8 +342,9 @@ fi
 
 
 echo "Enter any char to return..."
-read -n 1 -s -r -p "->"
-read -t 0.1 -n 100 
+    handle_any
+#read -n 1 -s -r -p "->"
+#read -t 0.1 -n 100 
 sleep 1
 exec "$0"  # 🚀 Restart the script
 
@@ -345,8 +370,9 @@ echo -e "Select where do you want to download the file to:"
     echo "Enter your choice (1-5): "
  
 while true; do
+    choice=$(handle_input)
     
-    read -p "-> " choice
+#    read -p "-> " choice
 
     case $choice in
         1)
@@ -400,11 +426,12 @@ done
 
 echo "Enter the URL to download from or exit to return to the main menu: "
 tput cuu1 && tput hpa 31
-read -p "" _URL
+#read -p "" _URL
+    _URL=$(handle_input)
 
-_URL_lc=${_URL,,}  # Convert to lowercase
+_URL=${_URL,,}  # Convert to lowercase
 
-if [[ $_URL_lc == "exit" ]]; then
+if [[ $_URL == "exit" ]]; then
 		echo "Exiting..."
 	sleep 2
 	exec "$0"  # 🚀 Restart the script
@@ -423,7 +450,7 @@ curl -L --fail --retry 10 --retry-delay 5 \
      --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
      -o "$_PATH/$FILENAME" "$_URL" & PID=$! 
 
-LOGFILE="./SZ/download_speed.log"
+LOGFILE="./logs/download_speed.log"
 
 # Ensure the log file exists
 touch "$LOGFILE"
@@ -611,13 +638,10 @@ echo -e "  "
 echo -e "  "
 #    echo "Press Enter to continue..."
  #   read -p ""
+fi
 
 echo "Enter any char to return..."
-read -n 1 -s -r -p "->"
-read -t 0.1 -n 100 
-#sleep 1
-exec "$0"  # 🚀 Restart the script
-fi
+    handle_any
             ;;
     ###########################################################################################################################
     #                                                      5️⃣  Dad Jokes                                                      #
@@ -644,7 +668,9 @@ done
     sleep 1
         echo -e "  "    
     echo "Do you want another joke? (y/n): " 
-    read -p "-> " another
+    # read -p "-> " another
+        another=$(handle_input)
+
         while [[ ! "$another" =~ ^[YyNn]$ ]]; do
         echo "Invalid response. Please enter 'y' or 'n': "
         read another < /dev/tty  # ✅ Fix: Ensuring input is taken from the terminal
@@ -669,11 +695,7 @@ done
         echo "Exported wipe data:"
 find /home/container/shared -maxdepth 1 -type f -printf "%f %TY-%Tm-%Td\n" | awk '{gsub(/^EXPORTED_/,"",$1); sub(/\..*$/, "", $1); print $1, "(" $2 ")" }'
 echo "Enter any char to return..."
-read -n 1 -s -r -p "->"
-read -t 0.1 -n 100 
-#sleep 1
-exec "$0"  # 🚀 Restart the script
-
+    handle_any
             ;;
     ###########################################################################################################################
     #                                               7️⃣  Exit/Restart Server                                                   #
@@ -768,6 +790,6 @@ curl -L --fail --retry 10 --retry-delay 5 \
             ;;
     esac
 
-    echo "Press Enter to continue..."
+    echo "Press Enter to continue....."
     read -p ""
 done
